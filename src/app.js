@@ -8,6 +8,7 @@ const app = express()
 //Handle Auth Middleware for all GET POST, .... requests
 app.use("/admin", adminAuth)
 
+// get login page no need for user to authorize
 app.use("/user/login", (req,res)=>{
     res.send("User logged in successfully!")
 })
