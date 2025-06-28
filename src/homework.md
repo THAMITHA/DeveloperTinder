@@ -20,5 +20,14 @@
 - Reading the query params in the routes
 - Reading the dynamic routes
 
+- Multiple Route Handlers - Play with the code
+- next()
+- next function and error along with res.send()
+- app.use("/route", rh, [rh2, rh3], rh4, rh5)
+- write a dummy auth middleware for admin
+- write a dummy auth middleware for all user routes, expect /user/login
+
+
+
 
  

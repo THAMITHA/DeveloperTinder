@@ -1,13 +1,27 @@
 const express = require('express');
+const {adminAuth, userAuth} = require('./middlewares/auth');
 
 
 //instance of express server
 const app = express()
 
-app.get("/user/:userId/:name/:password", (req, res)=>{
-    console.log(req.query)
-    console.log(req.params)
-    res.send({firstName: "Thamitha", lastName: "Rajput"})
+//Handle Auth Middleware for all GET POST, .... requests
+app.use("/admin", adminAuth)
+
+app.use("/user/login", (req,res)=>{
+    res.send("User logged in successfully!")
+})
+
+app.get("/user/data", userAuth, (req, res)=>{
+    res.send("User Data Sent");
+})
+
+app.get("/admin/getAllData", (req, res)=>{
+    res.send("All Data Sent")
+})
+
+app.delete("/admin/deleteUser", (req, res)=>{
+    res.send("Deleted a user")
 })
 //listening on port
 app.listen(3000, ()=>{
