@@ -41,6 +41,20 @@
 - Create a userSchema and user model
 - Create a /signup documents using API calls from postman
 - Error Handling using try, catch 
+- Difference between js and json
+- Add the express.json middleware to your app
+- Make your API dynamic to recieve data from end user
+- User.findOne with duplicate email ids, which object returned
+- API- Get user by email
+- API- Feed API - GET /feed - get all the users from the database
+- API- Get user by ID
+- Create a delete user API  
+- Difference between PATCH and PUT
+- API - Update a user
+- Explore the Mongoose Documentation for model methods
+- What are options in a Model.findOneAndUpdate method, explore more about it.
+- API - update the user with emailID
+
 
 
 
