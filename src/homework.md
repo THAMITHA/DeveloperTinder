@@ -73,6 +73,30 @@
 - Create login API
 - Compare passwords and throw errors if email or password is invalid
 
+- install cookie-parser
+- just send a dummy cookie to user
+- create get /profile API and check if you get the cookie back
+- install jsonWebToken
+- IN login API, after password validation, create a JWT token and send it to user in cookies
+- read the cookies inside your profile API and find the logged in user
+- userAuth Middleware
+- Add the userAuth middleware in profile API and a new sendconnectionRequest API
+- Set the expiry of JWT token and cookies to 7 days
+- Create UserSchema method to getJWT()
+- Create UserSchema method to compare(passwordInputByUser)
+
+- Explore tinder APIs
+- Create a list all API you can think of in Dev Tinder
+- Read documentation for express.Router
+- Create routes folder for managing auth, profile, request routers
+- Create authRouters, profileRouters, requestRouters
+- Import this routers in app.js
+- 
+
+
+
+
+
 
 
 
