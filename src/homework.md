@@ -97,6 +97,17 @@
 - Make sure you validate all data in every POST, PATCH apis
 
 
+- Create connection request schema 
+- Send Connection Request API
+- Proper validation of data
+- Think about corner cases
+- $or and $and query in mongoose
+- Schema.pre("save") function
+- Read more about indexs in mongoDB
+- why do we need index in DB?
+- what is the advantages and disadvantages of creating?
+- Read article
+
 
 
 
